@@ -6,5 +6,13 @@ This projects implements a simple car image classifier using Python with TensorF
 
 It has achieved ~90 % accuracy with the provided data, which is not bad for a dataset of < 1000 images, trained on a CPU.
 
+## Logging In
+#### On a Mac 
+1. open up a terminal
+2. enter: 'ssh -i /*path_to_file*/shauns.pem ubuntu@ec2-18-237-72-20.us-west-2.compute.amazonaws.com'
+#### On Windows 
+1. ensure that an SSH client such as [Putty](https://www.putty.org/) has been installed and open a command line.
+2. enter: 'putty.exe -ssh -i /*path_to_file*/shauns.pem ubuntu@ec2-18-237-72-20.us-west-2.compute.amazonaws.com'
+
 
 
