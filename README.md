@@ -42,8 +42,11 @@ To do training a set of positive and negative images for a class are needed. The
 Then enter:
 
 **nohup python3 -W ignore src/training.py &**
-This outputs to the file 'nohup.out' is will be unaffected by the computer going to sleep. Alternatively you can just train with 
+
+This outputs to the file 'nohup.out' is will be unaffected by the computer going to sleep. Alternatively you can just train with
+
 **python3 -W ignore src/training.py**
+
 which outputs to screen and training will be interrupted by computer sleeping.
 
 By default this will train over 20 epochs (complete passes through the data) which will take several hours on a CPU. After each epoch it will printout the accuracy ('acc') on the training set, and the accuracy on the validation or testing set. It will also save the model as a .hdf5 or .hd5 file at '/home/ubuntu/classifier/model'
