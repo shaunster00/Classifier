@@ -7,12 +7,26 @@ This projects implements a simple car image classifier using Python with TensorF
 It has achieved ~90 % accuracy with the provided data, which is not bad for a dataset of < 1000 images, trained on a CPU.
 
 ## Logging In
+To log in you will need to have received a file 'shauns.pem' providing AWS credentials. Store this file somehere reliable.
+
 #### On a Mac 
 1. open up a terminal
-2. enter: 'ssh -i /*path_to_file*/shauns.pem ubuntu@ec2-18-237-72-20.us-west-2.compute.amazonaws.com'
+2. enter: '> ssh -i /*path_to_file*/shauns.pem ubuntu@ec2-18-237-72-20.us-west-2.compute.amazonaws.com'
 #### On Windows 
 1. ensure that an SSH client such as [Putty](https://www.putty.org/) has been installed and open a command line.
-2. enter: 'putty.exe -ssh -i /*path_to_file*/shauns.pem ubuntu@ec2-18-237-72-20.us-west-2.compute.amazonaws.com'
+2. enter: '> putty.exe -ssh -i /*path_to_file*/shauns.pem ubuntu@ec2-18-237-72-20.us-west-2.compute.amazonaws.com'
+
+A session on the EC2 machine should have opened.
+
+## Usage
+2 programs are provided, an image prediction (testing) program and a training program.
+All commands are given relative to '/home/ubuntu/classifier', so enter '$ cd /home/ubuntu/classifier' if you are not already there.
+#### Image Prediction (testing)
+To do image prediction you will need an already-trained model and an image.
+
+#### Training
 
 
+## Other
+A requirements file is provided in the project folder listing installed Python packages.
 
