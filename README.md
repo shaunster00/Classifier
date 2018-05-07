@@ -23,11 +23,11 @@ A session on the EC2 machine should have opened.
 All commands are given relative to '/home/ubuntu/classifier', so enter '$ cd /home/ubuntu/classifier' if you are not already there.
 
 #### Image Prediction (testing)
-To do image prediction you will need an already-trained model and an image.
+To do image prediction you will need an already-trained model and an image. Enter:
 
-enter: **$ python3 -W ignore src/predict_image.py *path_to_model* *path_to_image* **
+**$ python3 -W ignore src/predict_image.py *path_to_model* *path_to_image***
 
-eg. for the provided model and an example image
+eg. for the provided model and an example image-
 
 **$ python3 -W ignore src/predict_image.py model/training_run_1/car_model_resnet50.h5 test_data/neg_car/bg_graz_355.jpeg**
 
