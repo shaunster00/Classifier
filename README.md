@@ -25,11 +25,11 @@ All commands are given relative to '/home/ubuntu/classifier', so enter '$ cd /ho
 #### Image Prediction (testing)
 To do image prediction you will need an already-trained model and an image.
 
-enter: '$ python3 -W ignore src/predict_image.py *path_to_model* *path_to_image*'
+enter: **$ python3 -W ignore src/predict_image.py *path_to_model* *path_to_image* **
 
 eg. for the provided model and an example image
 
-'$ python3 -W ignore src/predict_image.py model/training_run_1/car_model_resnet50.h5 test_data/neg_car/bg_graz_355.jpeg'
+**$ python3 -W ignore src/predict_image.py model/training_run_1/car_model_resnet50.h5 test_data/neg_car/bg_graz_355.jpeg**
 
 #### Training
 
