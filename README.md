@@ -41,10 +41,11 @@ To do training a set of positive and negative images for a class are needed. The
 
 Then enter:
 
-**python3 -W ignore src/training.py**
+**nohup python3 -W ignore src/training.py &**
 
 By default this will train over 20 epochs (complete passes through the data) which will take several hours on a CPU. After each epoch it will printout the accuracy ('acc') on the training set, and the accuracy on the validation or testing set. It will also save the model as a .hdf5 or .hd5 file at '/home/ubuntu/classifier/model'
 
 ## Other
 A requirements file is provided in the project folder listing installed Python packages (these are already installed on the EC2 instance).
+Any issues contact shaun at *shaunwerkhoven@gmail.com*
 
