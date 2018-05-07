@@ -49,7 +49,7 @@ This outputs to the file 'nohup.out' and will be unaffected by the computer goin
 
 which outputs to screen and training will be interrupted by computer sleeping.
 
-By default this will train over 20 epochs (complete passes through the data) which will take several hours on a CPU. After each epoch it will printout the accuracy ('acc') on the training set, and the accuracy on the validation or testing set. It will also save the model as a .hdf5 or .hd5 file at '/home/ubuntu/classifier/model'. Model training files are saved with a format 'name-{epoch:02d}-{val_acc:.2f}.hdf5' where val_acc is the accuracy on the testing set for that epoch. ie. 'car-model-resnet50-04-0.90.hdf5' indicates that it had 90% accuracy at epoch 4.
+By default this will train over 20 epochs (complete passes through the data) which will take several hours on a CPU. After each epoch it will printout the accuracy ('acc') on the training set, and the accuracy on the validation or testing set. It will also save the model as a .hdf5 or .hd5 file at '/home/ubuntu/classifier/model'. Model training files are saved with a format 'name-{epoch:02d}-{val_acc:.2f}.hdf5' where val_acc is the accuracy on the testing set for that epoch, ie. 'car-model-resnet50-04-0.90.hdf5' indicates that it had 90% accuracy at epoch 4.
 
 ## Other
 A requirements file is provided in the project folder listing installed Python packages (these are already installed on the EC2 instance).
