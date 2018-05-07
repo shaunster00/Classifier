@@ -28,7 +28,7 @@ To do image prediction you will need an already-trained model and an image. An a
 
 Then enter:
 
-**$ python3 -W ignore src/predict_image.py *path_to_model*  *path_to_image***
+**$ python3 -W ignore src/predict_image.py *path_to_model* *path_to_image***
 
 eg. for the provided model and an example image-
 
