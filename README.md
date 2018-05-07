@@ -43,7 +43,7 @@ Then enter:
 
 **nohup python3 -W ignore src/training.py &**
 
-This outputs to the file 'nohup.out' is will be unaffected by the computer going to sleep. Alternatively you can just train with
+This outputs to the file 'nohup.out' and will be unaffected by the computer going to sleep. Alternatively you can just train with
 
 **python3 -W ignore src/training.py**
 
