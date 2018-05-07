@@ -22,17 +22,18 @@ A session on the EC2 machine should have opened.
 2 programs are provided, an image prediction (testing) program and a training program.
 All commands are given relative to '/home/ubuntu/classifier', so enter '$ cd /home/ubuntu/classifier' if you are not already there.
 
-#### Image Prediction (testing)
-To do image prediction you will need an already-trained model and an image. Enter:
+### Image Prediction (testing)
+To do image prediction you will need an already-trained model and an image. A pre-trained model is provided at '/home/ubuntu/classifier/model/training_run_1/car_model_resnet50.h5
+Enter:
 
-**$ python3 -W ignore src/predict_image.py *path_to_model* *path_to_image***
+**$ python3 -W ignore src/predict_image.py *path_to_model*  *path_to_image***
 
 eg. for the provided model and an example image-
 
-**$ python3 -W ignore src/predict_image.py model/training_run_1/car_model_resnet50.h5 test_data/neg_car/bg_graz_355.jpeg**
+**$ python3 -W ignore src/predict_image.py model/training_run_1/car_model_resnet50.h5  test_data/neg_car/bg_graz_355.jpeg**
 
-#### Training
-
+### Training
+To do training
 
 ## Other
 A requirements file is provided in the project folder listing installed Python packages.
