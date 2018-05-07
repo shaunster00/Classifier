@@ -23,8 +23,10 @@ A session on the EC2 machine should have opened.
 All commands are given relative to '/home/ubuntu/classifier', so enter '$ cd /home/ubuntu/classifier' if you are not already there.
 
 ### Image Prediction (testing)
-To do image prediction you will need an already-trained model and an image. A pre-trained model is provided at '/home/ubuntu/classifier/model/training_run_1/car_model_resnet50.h5
-Enter:
+To do image prediction you will need an already-trained model and an image. An already-trained model is provided at '/home/ubuntu/classifier/model/training_run_1/car_model_resnet50.h5' and images at
+'/home/ubuntu/classifier/test_data/pos_car
+
+Then enter:
 
 **$ python3 -W ignore src/predict_image.py *path_to_model*  *path_to_image***
 
@@ -32,8 +34,16 @@ eg. for the provided model and an example image-
 
 **$ python3 -W ignore src/predict_image.py model/training_run_1/car_model_resnet50.h5  test_data/neg_car/bg_graz_355.jpeg**
 
+A line printout will provide the class decision, class confidence (0-1, where 0 indicates class not present), and the filename.
+
 ### Training
-To do training
+To do training a set of positive and negative images for a class are needed. These should be arranged in separate directories at '/home/ubuntu/classifier/train_data'
+
+Then enter:
+
+**python3 -W ignore src/training.py*
+
+By default this will train over 20 epochs (complete passes through the data) which will take several hours on a CPU. After each epoch it will printout the accuracy ('acc') on the training set, and the accuracy on the validation or testing set
 
 ## Other
 A requirements file is provided in the project folder listing installed Python packages.
